@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>F.C.</title>
+</head>
+<body align="center">
+	<p><i>Isabella Arena:</i></p>
+	<hr>
+	<p id="new"></p>
+	<hr>
+	<button onclick="saludar()">Feliz Cumple inútil!</button>
+	<script>
+		var control = 0;
+		function saludar(){
+			if(control == 0){
+				document.getElementById('new').innerHTML='Mujer virtuosa, ¿quién la hallará? <br> Porque su estima sobrepasa largamente a la de las piedras preciosas.';
+				control=1;   
+			}
+			else if(control == 1){
+				document.getElementById('new').innerHTML=' '; 
+				control=0;
+			}
+			else{
+				document.getElementById('new').innerHTML='Rompiste todo'; 
+			}
+		}	
+	</script>
+</body>
+</html>
+
